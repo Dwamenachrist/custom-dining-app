@@ -3,7 +3,6 @@
     "name": "custom-dining-app",
     "slug": "custom-dining-app",
     "version": "1.0.0",
-
     "scheme": "custom-dining-app",
     "web": {
       "bundler": "metro",
@@ -21,28 +20,37 @@
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kwasiagyapong.customdiningapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.kwasiagyapong.customdiningapp"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "c182f76b-528e-4133-b8cf-6b5ea4fa0e36"
       }
     }
   }
