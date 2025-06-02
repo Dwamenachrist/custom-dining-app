@@ -13,7 +13,7 @@ const TABS = [
 
 export default function CustomTabBar(props: any) {
   const router = useRouter();
-  const segments = useSegments();
+  const segments: string[] = useSegments();
   const currentRoute = '/' + (segments[1] || 'home');
 
   return (
