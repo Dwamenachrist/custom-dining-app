@@ -26,9 +26,14 @@
     "icon": "./assets/custom-dining-splash.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/custom-dining-splash.png",
+      "image": "./assets/splash-light.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F5F5F0",
+      "dark": {
+        "image": "./assets/splash-dark.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#2F7356"
+      }
     },
     "assetBundlePatterns": [
       "**/*"
