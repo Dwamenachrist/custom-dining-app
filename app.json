@@ -23,7 +23,7 @@
       "tsconfigPaths": true
     },
     "orientation": "portrait",
-    "icon": "./assets/custom-dining-splash.png",
+        "icon": "./assets/custom-dining-splash.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash-light.png",
@@ -31,7 +31,7 @@
       "backgroundColor": "#F5F5F0",
       "dark": {
         "image": "./assets/splash-dark.png",
-        "resizeMode": "contain",
+        "resizeMode": "contain", 
         "backgroundColor": "#2F7356"
       }
     },
