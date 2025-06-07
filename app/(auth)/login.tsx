@@ -57,13 +57,14 @@ export default function LoginScreen() {
           keyboardShouldPersistTaps="handled">
           
           {/* Logo and Welcome Text */}
-          <View className="items-center mb-8">
+          <View className="mb-8">
             <Image
               source={require('../../assets/Logo.png')}
-              className="w-24 h-24 mb-6"
+              className="self-center align-center w-24 h-24 mb-6"
+              
               resizeMode="contain"
             />
-            <Text className="text-3xl font-bold text-black">Welcome Back!</Text>
+            <Text style={{ color: colors.primary }} className="text-3xl font-bold text-black">Welcome Back!</Text>
             <Text className="text-base text-darkGray mt-2">Login to continue using the app</Text>
           </View>
 
@@ -116,14 +117,14 @@ export default function LoginScreen() {
 
           {/* Social Logins */}
           <View className="flex-row justify-center space-x-6">
-            <TouchableOpacity onPress={() => handleSocialLogin('google')} className="p-3 border border-gray rounded-full">
-              <FontAwesome name="google" size={24} color="#DB4437" />
+            <TouchableOpacity onPress={() => handleSocialLogin('google')} className="p-3 rounded-full">
+              <Image source={require('../../assets/google.png')} className="w-6 h-6" />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleSocialLogin('microsoft')} className="p-3 border border-gray rounded-full">
-              <FontAwesome name="windows" size={24} color="#0078D4" />
+            <TouchableOpacity onPress={() => handleSocialLogin('microsoft')} className="p-3 rounded-full">
+              <Image source={require('../../assets/microsoft.png')} className="w-6 h-6" />
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => handleSocialLogin('apple')} className="p-3 border border-gray rounded-full">
-              <FontAwesome name="apple" size={24} color="#000000" />
+            <TouchableOpacity onPress={() => handleSocialLogin('apple')} className="p-3 rounded-full">
+              <Image source={require('../../assets/apple.png')} className="w-6 h-6" />
             </TouchableOpacity>
           </View>
 
